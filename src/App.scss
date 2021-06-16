@@ -1,0 +1,138 @@
+@import "./colors.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf1f9;
+
+  .language-button {
+    margin-right: auto;
+    padding: 15px 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    color: $primary-purple;
+  }
+
+  .header-img {
+    margin: auto;
+    width: 80%;
+  }
+
+  .title {
+    color: $primary-purple;
+    font-weight: bold;
+    max-width: 75%;
+    font-size: 45px;
+    margin: auto;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .donateNow {
+    background-color: $primary-purple;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px;
+    width: 75%;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 30px;
+  }
+
+  .joinCampaign {
+    background-color: white;
+    color: $primary-purple;
+    border: 1px solid $primary-purple;
+    width: 75%;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 70px;
+    border-radius: 30px;
+  }
+
+  .goal-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 40px;
+
+    .goal-numbers-container {
+      display: flex;
+      justify-content: space-between;
+
+      .goal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #4d4c4c;
+
+        .goal-title {
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        .goal-amount {
+          text-align: center;
+          font-weight: bold;
+          font-size: 25px;
+        }
+
+        .currency {
+          text-align: center;
+        }
+      }
+
+      .white-separator {
+        width: 4px;
+        height: 100px;
+        background-color: white;
+      }
+    }
+
+  }
+  .progress-bar-goal {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+
+    .amount {
+      color: #4d4c4c;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 0 4px;
+    }
+    .currency {
+      font-size: 10px;
+      color: gray;
+    }
+  }
+
+  .header-last-title {
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .hor-separate {
+    background-color: $primary-purple;
+    width: 15%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

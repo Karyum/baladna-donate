@@ -1,0 +1,95 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:hover,
+:focus,
+:active {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+html,
+body {
+    display: block;
+    width: 100%;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: unset;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+
+    &.has-modal {
+        overflow: hidden;
+    }
+}
+
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+a {
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+
+    &:focus,
+    &:hover,
+    &:active
+    &:visited {
+        color: inherit;
+    }
+}
+
+input,
+button {
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}

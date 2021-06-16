@@ -1,0 +1,35 @@
+$purple: #6a54c9;
+$gray-light: #eef1f3;
+
+$bar-size: 10px;
+$bar-radius: 60px;
+$bar-bg: rgba(0,0,0,0.075);
+
+
+.progress-bar {
+  border-radius: $bar-radius;
+  overflow: hidden;
+  width: 80%;
+
+
+  span {
+    display: block;
+  }
+
+}
+
+.bar {
+  background: $bar-bg;
+}
+
+.progress {
+  background: $purple;
+  color: #fff;
+  padding: $bar-size;
+  width: 35%;
+}
+
+.progress-bar {
+  max-width: 70%;
+  margin: auto;
+}
