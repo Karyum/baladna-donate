@@ -242,7 +242,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
   background-color: #cdecff;
   position: relative;
   padding-bottom: 50px;
@@ -291,15 +290,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
   background-color: $primary-purple;
   padding-bottom: 50px;
 
   .footerTitle {
     font-size: 32px;
     color: black;
-    margin-left: auto;
-    margin: 0px 150px;
     text-align: center;
     font-weight: bold;
     margin-top: 50px;
