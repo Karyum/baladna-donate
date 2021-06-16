@@ -9,7 +9,7 @@ function App() {
   const [language, setLanguage] = useState("ar")
   const isRtl = language === "ar"
 
-  console.log("Build by github: @Karyum")
+  console.log("Built by @Karyum")
 
   return (
     <IntlProvider
@@ -84,7 +84,19 @@ function App() {
           <div className="hor-separate"></div>
         </div>
 
-        {/* after header here */}
+        <div className="description">
+          <div className="desc-slash"></div>
+
+          <FormattedMessage id="descriptionTextMain">
+            {(text) => <p className="descriptionTextMain">{text}</p>}
+          </FormattedMessage>
+
+          <FormattedMessage id="descriptionTextSub">
+            {(text) => <p className="descriptionTextSub">{text}</p>}
+          </FormattedMessage>
+
+          <div className="desc-slash"></div>
+        </div>
       </div>
     </IntlProvider>
   )
