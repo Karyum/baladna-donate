@@ -122,6 +122,28 @@ function App() {
             <span className="num">2</span>
           </div>
         </div>
+
+        <div className="aboutus-container">
+          <FormattedMessage id="aboutusTitle">
+            {(text) => <p className="aboutusTitle">{text}</p>}
+          </FormattedMessage>
+
+          <div className="question-mark">?</div>
+
+          <FormattedMessage id="aboutusText1">
+            {(text) => <p className="aboutusText1">{text}</p>}
+          </FormattedMessage>
+
+          <FormattedMessage id="aboutusText2">
+            {(text) => <p className="aboutusText2">{text}</p>}
+          </FormattedMessage>
+        </div>
+
+        <div className="footer">
+          <FormattedMessage id="footerTitle">
+            {(text) => <p className="footerTitle">{text}</p>}
+          </FormattedMessage>
+        </div>
       </div>
     </IntlProvider>
   )
