@@ -97,7 +97,6 @@
         background-color: white;
       }
     }
-
   }
   .progress-bar-goal {
     display: flex;
@@ -144,7 +143,7 @@
 
   .desc-slash {
     width: 30px;
-    height: px;
+    height: 5px;
     background-color: $primary-purple;
     transform: rotate(-45deg);
     margin: 40px 0px;
@@ -153,18 +152,88 @@
   .descriptionTextMain {
     color: $primary-purple;
     margin: 0px 12px;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     text-align: center;
-
   }
 
   .descriptionTextSub {
     color: $primary-purple;
     margin: 0px 12px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
+}
 
+.campaign-goals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #dfdddd;
+  position: relative;
+  padding-bottom: 50px;
 
+  .campaignGoalsTitle {
+    font-size: 32px;
+    color: black;
+    margin-left: auto;
+    margin: 0px 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    z-index: 2;
+  }
+
+  .campaignGoalsText1 {
+    color: $primary-purple;
+    margin: 0px 12px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .campaignGoalsText2 {
+    color: $primary-purple;
+    margin: 0px 12px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  .absolute-percent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+
+    .num {
+      font-size: 90px;
+      color: #ebe8e8;
+      font-weight: bold;
+      height: 80px;
+
+      &:nth-child(3) {
+        margin-top: -30px;
+      }
+    }
+
+    .slash {
+      width: 30px;
+      height: 5px;
+      background-color: white;
+      transform: rotate(-45deg);
+      margin: 40px 0px;
+    }
+  }
 }

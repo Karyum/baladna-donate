@@ -1,2 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-export default {}
+export default {
+  donateNow: "Donate now",
+  joinCampaign: "Join Campaign",
+}

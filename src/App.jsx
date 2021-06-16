@@ -19,7 +19,12 @@ function App() {
     >
       <div className="App" style={{ direction: isRtl ? "rtl" : "ltr" }}>
         <div className="header">
-          <button className="language-button">{isRtl ? "EN" : "AR"}</button>
+          <button
+            onClick={() => setLanguage(isRtl ? "en" : "ar")}
+            className="language-button"
+          >
+            {isRtl ? "EN" : "AR"}
+          </button>
 
           <img src={headerImage} className="header-img" alt="" />
 
@@ -96,6 +101,26 @@ function App() {
           </FormattedMessage>
 
           <div className="desc-slash"></div>
+        </div>
+
+        <div className="campaign-goals">
+          <FormattedMessage id="campaignGoalsTitle">
+            {(text) => <p className="campaignGoalsTitle">{text}</p>}
+          </FormattedMessage>
+
+          <FormattedMessage id="campaignGoalsText1">
+            {(text) => <p className="campaignGoalsText1">{text}</p>}
+          </FormattedMessage>
+
+          <FormattedMessage id="campaignGoalsText2">
+            {(text) => <p className="campaignGoalsText2">{text}</p>}
+          </FormattedMessage>
+
+          <div className="absolute-percent">
+            <span className="num">1</span>
+            <span className="slash"></span>
+            <span className="num">2</span>
+          </div>
         </div>
       </div>
     </IntlProvider>
