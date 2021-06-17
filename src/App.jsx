@@ -1,7 +1,11 @@
-import logo from "./logo.svg"
 import "./App.scss"
 import { useState } from "react"
 import headerImage from "./assets/header-title.png"
+import footerLogo from "./assets/footer-logo.png"
+import logo from "./assets/logo.jpeg"
+import facebook from "./assets/facebook.png"
+import instagram from "./assets/instagram.png"
+import twitter from "./assets/twitter.png"
 import { IntlProvider, FormattedMessage } from "react-intl"
 import messages from "./translations"
 
@@ -143,6 +147,27 @@ function App() {
           <FormattedMessage id="footerTitle">
             {(text) => <p className="footerTitle">{text}</p>}
           </FormattedMessage>
+
+          <FormattedMessage id="footerMessageSend">
+            {(text) => <button className="footerMessageSend">{text}</button>}
+          </FormattedMessage>
+
+          <div className="social-container">
+            <FormattedMessage id="socialContainerTitle">
+              {(text) => <h1 className="social-container-title">{text}</h1>}
+            </FormattedMessage>
+
+            <div className="media-icons">
+              <img src={twitter} className="icon" alt="" />
+              <img src={instagram} className="icon" alt="" />
+              <img src={facebook} className="icon" alt="" />
+            </div>
+          </div>
+
+          <div className="bottom-footer">
+            <img src={logo} className="img" alt="" />
+            <img src={footerLogo} className="img" alt="" />
+          </div>
         </div>
       </div>
     </IntlProvider>
