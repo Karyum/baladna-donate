@@ -5,6 +5,8 @@ import "./progress-bar.scss"
 import "./index.scss"
 import App from "./App"
 
+console.log("Built by @Karyum")
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
